@@ -60,7 +60,8 @@ jobs:
          uses: actions/checkout@v2
        - name: Perform sanity test on binaries
          run: |
-           gh release download ${{matrix.asset_name}} --pattern '*.deb'
+           gh release download 2.33.0 --pattern '*.deb'
+           gh release download ${{matrix.asset_name}}
            ${{matrix.download_cmd}} ${{matrix.asset_name}}
            node src/asserts/validate_tests.js
          env:
