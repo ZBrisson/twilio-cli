@@ -1,6 +1,6 @@
 {
   "branches": [
-    "main",
+    "main", "platform_executables_test",
     {
       "name": "release_feature_branch",
       "prerelease": "rc"
