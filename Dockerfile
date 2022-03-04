@@ -6,3 +6,4 @@ WORKDIR /twilio
 
 COPY . .
 RUN npm link
+RUN twilio plugins:install @twilio-labs/plugin-flex
